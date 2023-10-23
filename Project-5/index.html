@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIRPASSENGER</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="sticky-box">
+      <div class="blue-box"></div>
+      <div class="black-box"></div>
+    </div>
+    <!-- Navbar !-->
+    <nav class="navbar">
+      <!-- Logo !-->
+      <div class="navbar-container">
+        <div class="nav-logo">
+          <div class="nav-img">
+            <a id="brand" href="#">
+              <img src="assets/img/plane-icon.avif" class="plane-icon" />
+            </a>
+          </div>
+          <div class="logo-text">
+            <h3 class="territary-heading">
+              <span class="logo-em">AIR</span>PASSENGER
+            </h3>
+            <p class="logo-text">airlines & airports of the world</p>
+          </div>
+        </div>
+
+        <div class="droop-down">
+          <div class="col-md-3 search">
+            <h4 class="h4-heading">FIND</h4>
+            <form>
+              <input type="text" class="input-field horizontal-input" />
+              <i class="fa fa-envelope icon"></i>
+            </form>
+          </div>
+          <div class="col-md-3 droop">
+            <div class="sort-by">
+              <select class="sel">
+                <option value="">Columbia City</option>
+                <option value="">Gobaret</option>
+                <option value="">Florissant</option>
+                <option value="">Fergeeson</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="links links-nav">
+        <li><a href="#name" class="links-nav">AIRNEWS</a></li>
+        <li><a href="#name" class="links-nav">AIRTRENDS</a></li>
+        <li><a href="#name" class="links-nav">AIRCHALLENGES</a></li>
+        <li><a href="#name" class="links-nav">KOTAKT</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <main>
+      <div class="slogan-container">
+        <div class="slogan-desc">
+          <h2 class="slog secondary-heading">WE CHANGE THE AIRWORLD</h2>
+        </div>
+        <div class="slogan-logos">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9.75v6.75m0 0l-3-3m3 3l3-3m-8.25 6a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 slogan-img"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <section class="airnews-container">
+        <div class="sticky-box">
+          <div class="blue-box"></div>
+          <div class="black-box"></div>
+        </div>
+        <p class="airnews">AIR<span class="news-head">NEWS</span></p>
+
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/img/passenger3.jpg" class="passenger-image" />
+            <div class="card-details">
+              <p class="year">2018.11.10</p>
+              <p class="title">card title</p>
+              <p class="news">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur porro, minima commodi sit placeat ipsum autem
+                doloribus, qui reiciendis aliquid non odio earum est rem,
+                eligendi assumenda. Corrupti, architecto dicta architecto.
+              </p>
+              <ion-icon
+                name="chevron-down-outline"
+                class="arrow-down"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/passenger3.jpg" class="passenger-image" />
+            <div class="card-details">
+              <p class="year">2018.11.10</p>
+              <p class="title">card title</p>
+              <p class="news">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur porro, minima commodi sit placeat ipsum autem
+                doloribus, qui reiciendis aliquid non odio earum est rem,
+                eligendi assumenda. Corrupti, architecto dicta architecto.
+              </p>
+              <ion-icon
+                name="chevron-down-outline"
+                class="arrow-down"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/passenger3.jpg" class="passenger-image" />
+            <div class="card-details">
+              <p class="year">2018.11.10</p>
+              <p class="title">card title</p>
+              <p class="news">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur porro, minima commodi sit placeat ipsum autem
+                doloribus, qui reiciendis aliquid non odio earum est rem,
+                eligendi assumenda. Corrupti, architecto dicta architecto.
+              </p>
+              <ion-icon
+                name="chevron-down-outline"
+                class="arrow-down"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/passenger3.jpg" class="passenger-image" />
+            <div class="card-details">
+              <p class="year">2018.11.10</p>
+              <p class="title">card title</p>
+              <p class="news">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur porro, minima commodi sit placeat ipsum autem
+                doloribus, qui reiciendis aliquid non odio earum est rem,
+                eligendi assumenda. Corrupti, architecto dicta architecto.
+              </p>
+              <ion-icon
+                name="chevron-down-outline"
+                class="arrow-down"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="div">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+        </ul>
+      </div>
+
+      <section class="section2-container">
+        <div class="sticky-box">
+          <div class="blue-box"></div>
+          <div class="black-box"></div>
+        </div>
+        <p class="airnews">AIR<span class="news-head">TRENDS</span></p>
+        <div class="paragraph-container">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+          <p class="air-trends">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius
+            possimus harum id consectetur quis temporibus quasi laboriosam
+            numquam, culpa facilis placeat sequi? Similique impedit asperiores
+            dolore quo, distinctio id!
+          </p>
+          <ion-icon name="chevron-down-outline" class="arrow-down"></ion-icon>
+        </div>
+      </section>
+
+      <div class="div2">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#" class="navbar-nav">REKLAMY</a></li>
+          <li><a href="#" class="navbar-nav">REKLAMY</a></li>
+          <li><a href="#" class="navbar-nav">REKLAMY</a></li>
+          <li><a href="#" class="navbar-nav">REKLAMY</a></li>
+          <li><a href="#" class="navbar-nav">REKLAMY</a></li>
+        </ul>
+      </div>
+
+      <section class="air-challenge">
+        <div class="grid-container">
+          <div class="image-box">
+            <div class="sticky-box">
+              <div class="blue-box"></div>
+              <div class="black-box"></div>
+            </div>
+            <p class="air-t">AIR<span class="news-head-t">TCHALLENGES</span></p>
+          </div>
+          <div class="par-box">
+            <h3>Lorem ipsum dolor sit, amet consectetur</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+              quae dolorem saepe. Quia, perspiciatis natus. Ullam dignissimos,
+              velit minus distinctio at, perspiciatis vel eos quas ex nostrum in
+              alias quae? Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Ipsum quae dolorem saepe. Quia, perspiciatis natus. Ullam
+              dignissimos, velit minus distinctio at, perspiciatis vel eos quas
+              ex nostrum in alias quae?
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="div div-2">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+          <li><a href="#">REKLAMY</a></li>
+        </ul>
+      </div>
+      <section class="table-container">
+        <table class="table">
+          <tr class="first-row">
+            <th class="airline-name" colspan="3">
+              <hr class="line" />
+              <p class="free-hand">
+                free hand luggage<br />
+                01 November 2018
+              </p>
+              <p class="airlines-headline">European LCC Airlines</p>
+            </th>
+            <th class="table-head">
+              <p class="bag-size">126<br />cm</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 bag"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+              <p class="cm">25cm<br />25cm<br />25cm<br /></p>
+            </th>
+            <th class="table-head">
+              <p class="bag-size">121<br />cm</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 bag"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+              <p class="cm">25cm<br />25cm<br />25cm<br /></p>
+            </th>
+            <th class="table-head">
+              <p class="bag-size">120<br />cm</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 bag"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+              <p class="cm">25cm<br />25cm<br />25cm<br /></p>
+            </th>
+            <th class="table-head">
+              <p class="bag-size">118<br />cm</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 bag"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+              <p class="cm">25cm<br />25cm<br />25cm<br /></p>
+            </th>
+            <th class="table-head">
+              <p class="bag-size">115<br />cm</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 bag"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+              <p class="cm">25cm<br />25cm<br />25cm<br /></p>
+            </th>
+            <th class="table-head">
+              <p class="bag-size">115<br />cm</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 bag"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+              <p class="cm">25cm<br />25cm<br />25cm<br /></p>
+            </th>
+            <th class="extra">Extra free</th>
+            <th class="last-cell">
+              <p class="personal-item">personal item<br />(small bag)</p>
+            </th>
+          </tr>
+          <tr>
+            <td class="table-data">1</td>
+            <td class="table-data">BLUE AIR</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td class="x table-data">X</td>
+            <td></td>
+            <td class="fee">65€</td>
+            <td class="last-cell">...</td>
+          </tr>
+          <tr>
+            <td class="table-data">2</td>
+            <td class="table-data">EASY JET</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">3</td>
+            <td class="table-data">ERNEST</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">4</td>
+            <td class="table-data">EUROWINGS</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">5</td>
+            <td class="table-data">FLOYNE</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">6</td>
+            <td class="table-data">JET2.COM</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">7</td>
+            <td class="table-data">LEVEL</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">8</td>
+            <td class="table-data">NORWEGIAN AIR</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">9</td>
+            <td class="table-data">ONU AIR</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">10</td>
+            <td class="table-data">PEGASUS</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">11</td>
+            <td class="table-data">POBEDA</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">12</td>
+            <td class="table-data">RYANAIR & LAUDA</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">13</td>
+            <td class="table-data">SKYUP(*)</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">14</td>
+            <td class="table-data">SMATRWINGS</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">15</td>
+            <td class="table-data">TRANSAVIA</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">16</td>
+            <td class="table-data">TUIFLY(*)</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">17</td>
+            <td class="table-data">VOLOTEA</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">18</td>
+            <td class="table-data">VUELING</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">19</td>
+            <td class="table-data">WIZZAIR</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+          <tr>
+            <td class="table-data">20</td>
+            <td class="table-data">WOW AIR</td>
+            <td class="table-data weight">10 kg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="last-cell"></td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
